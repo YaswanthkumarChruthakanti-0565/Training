@@ -1,8 +1,29 @@
-{% extends 'master.html' %}
-{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Product Catalog</title>
+    <style>
+        img { max-width: 150px; height: 150px;}
+        .product { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; }
+        center{
+            background-color: bisque;height:100px;
+            padding: 30px;
+            font-size: xx-large;
+        }
+        .ss{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body><div class="ss">
     
+    <div><h1>Mother Theresa College:</h1></div>
     </div>
-    <h1>🍲Restaurant🥘<br>😋😋😋😋😋</h1>
+    <h1>🍲Restaurant🥘 </h1>
     {% for product in products %}
         <div class="product">
             {% if product.image %}
@@ -11,6 +32,6 @@
             <h2><a href="{% url 'product_detail' product.pk %}">{{ product.name }}</a></h2>
             <p>Rs{{ product.price }}</p>
         </div>
-        
     {% endfor %}
-{% endblock %}
+</body>
+</html>

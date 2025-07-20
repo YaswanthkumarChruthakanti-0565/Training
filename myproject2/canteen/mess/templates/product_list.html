@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{% block content %}
+    
+    </div>
+    <h1>🍲Restaurant🥘<br>😋😋😋😋😋</h1>
+    {% for product in products %}
+        <div class="product">
+            {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% endif %}
+            <h2><a href="{% url 'product_detail' product.pk %}">{{ product.name }}</a></h2>
+            <p>Rs{{ product.price }}</p>
+        </div>
+        
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,113 @@
+
+body {   font-family: Arial, Helvetica, sans-serif; }
+
+.nav{
+  background-color: #eef6f5;
+  direction:center;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #1a67e3;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.login{
+float:right;
+background:inherit;
+color:inherit;
+}
+.login-container {
+            background: #ebe7e3;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: -2px -5px #d9e1f0;
+            width: 300px;
+            align-items: center;
+            margin-left: 550px;
+            margin-top: 100px;
+            /* text-align: center; */
+        }
+        .login-container h2 {
+            display: flex;
+            margin-bottom: 20px;
+            color: #010509;
+            align-items: center;
+            text-align: center;
+            padding-left: 80px;
+        }
+        .btn {
+            width: 50%;
+            padding: 5px;
+            background: #05aff8;
+            color: #0f0303;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .forgot-password {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .forgot-password a {
+            color: #080808;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
